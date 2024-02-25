@@ -3,6 +3,7 @@ import OtherPageNavBar from './OtherPageNavBar';
 import MapsInteractive from './MapsInteractive';
 import { useSelector } from 'react-redux';
 function FindUs() {
+  const path="/"
   const output =useSelector((state)=>state.findus.value);
   return (
     <>
@@ -26,7 +27,7 @@ function FindUs() {
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
               <a href="https://www.google.com/maps/dir/43.6669115,10.6309176/La+Felicit%C3%A0,+Viale+Rinaldo+Piaggio,+26,+56025+Pontedera+PI/@43.663948,10.6225235,16z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x132a75edc6d442d5:0x53524fbc27e702d4!2m2!1d10.6329959!2d43.6610429!3e0?hl=it&entry=ttu" className="m-4">
-                <img src="src/assets/google-maps-icon.svg" alt="Phone" className="w-20 h-20" />
+                <img src={`${path}google-maps-icon.svg`} alt="Phone" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">Google Maps</p>
             </div>
@@ -34,7 +35,7 @@ function FindUs() {
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
               <a href="mailto:ristorantelafelicita@gmail.com" className="m-4">
-                <img src="src/assets/email-icon.svg" alt="Email" className="w-20 h-20" />
+                <img src={`${path}email-icon.svg`} alt="Email" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">E-mail</p>
             </div>
@@ -42,7 +43,7 @@ function FindUs() {
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
               <a href="https://wa.me/3338695996" className="m-4">
-                <img src="src/assets/whatsapp-icon.svg" alt="WhatsApp" className="w-20 h-20" />
+                <img src={`${path}whatsapp-icon.svg`} alt="WhatsApp" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">WhatsApp</p>
             </div>
@@ -50,7 +51,7 @@ function FindUs() {
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
               <a href="https://www.facebook.com/ristorantelafelicita/?locale=it_IT" className="m-4">
-                <img src='src/assets/facebook-icon.svg' alt="Facebook" className="w-20 h-20" />
+                <img src={`${path}facebook-icon.svg`} alt="Facebook" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">Facebook</p>
             </div>

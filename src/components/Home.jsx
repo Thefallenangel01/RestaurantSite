@@ -3,16 +3,16 @@ import NavBar from './NavBar';
 import { useSelector } from 'react-redux';
 
 function Home() {
- 
+  const path="/restaurantPhoto/"
   const images = [
-    'src/assets/restaurantPhoto/1.jpg',
-    'src/assets/restaurantPhoto/2.jpg',
-    'src/assets/restaurantPhoto/3.jpg',
-    'src/assets/restaurantPhoto/4.jpg',
-    'src/assets/restaurantPhoto/5.jpg',
-    'src/assets/restaurantPhoto/6.jpg',
-    'src/assets/restaurantPhoto/7.jpg',
-    'src/assets/restaurantPhoto/8.jpg'
+    `${path}1.jpg`,
+    `${path}2.jpg`,
+    `${path}3.jpg`,
+    `${path}4.jpg`,
+    `${path}5.jpg`,
+    `${path}6.jpg`,
+    `${path}7.jpg`,
+    `${path}8.jpg`
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   useEffect(() => {
@@ -20,7 +20,7 @@ function Home() {
       setCurrentIndex((prevIndex) =>
       (prevIndex + 1) % images.length
       );
-    }, 4000);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, []);

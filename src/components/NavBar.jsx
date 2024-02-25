@@ -8,7 +8,7 @@ import { changeLanguageFindUs } from "../redux/findusSlice";
 import { changeLanguageDelivery } from "../redux/deliverySlice";
 
 function NavBar() {
-  
+  const path="/flags/"
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -61,17 +61,17 @@ function NavBar() {
           </li>
           <li className="hover:bg-orange-700 rounded px-2 py-1">
               <button onClick={() => {dispatch(changeLanguageNav('it'));dispatch(changeLanguageHome('it'));dispatch(changeLanguage('it'));dispatch(changeLanguageFindUs('it'));dispatch(changeLanguageDelivery('it'))}} className="focus:outline-none">
-                <img src="src/assets/flags/it.svg" alt="Italian" className="h-4 w-6" />
+                <img src={`${path}it.svg`} alt="Italian" className="h-4 w-6" />
               </button>
             </li>
             <li className="hover:bg-orange-700 rounded px-2 py-1">
               <button onClick={() => {dispatch(changeLanguageNav('en'));dispatch(changeLanguageHome('en'));dispatch(changeLanguage('en'));dispatch(changeLanguageFindUs('en'));dispatch(changeLanguageDelivery('en'))}} className="focus:outline-none">
-                <img src="src/assets/flags/uk.png" alt="English" className="h-4 w-6" />
+                <img src={`${path}uk.png`} alt="English" className="h-4 w-6" />
               </button>
             </li>
             <li className="hover:bg-orange-700 rounded px-2 py-1">
               <button onClick={() => {dispatch(changeLanguageNav('cn'));dispatch(changeLanguageHome('cn'));dispatch(changeLanguage('cn'));dispatch(changeLanguageFindUs('cn'));dispatch(changeLanguageDelivery('cn'))}} className="focus:outline-none">
-                <img src="src/assets/flags/cn.svg" alt="Chinese" className="h-4 w-6" />
+                <img src={`${path}cn.svg`} alt="Chinese" className="h-4 w-6" />
               </button>
             </li>
         </ul>
@@ -92,17 +92,17 @@ function NavBar() {
             </li>
             <li className="hover:bg-orange-700 rounded px-2 py-1">
               <button onClick={() => {dispatch(changeLanguageNav('it'));dispatch(changeLanguageHome('it'));dispatch(changeLanguage('it'));dispatch(changeLanguageFindUs('it'));dispatch(changeLanguageDelivery('it'));toggleMenu()}} className="focus:outline-none">
-                <img src="src/assets/flags/it.svg" alt="Italian" className="h-4 w-6" />
+                <img src={`${path}it.svg`} alt="Italian" className="h-4 w-6" />
               </button>
             </li>
             <li className="hover:bg-orange-700 rounded px-2 py-1">
               <button onClick={() => {dispatch(changeLanguageNav('en'));dispatch(changeLanguageHome('en'));dispatch(changeLanguage('en'));dispatch(changeLanguageFindUs('en'));dispatch(changeLanguageDelivery('en'));toggleMenu()}} className="focus:outline-none">
-                <img src="src/assets/flags/uk.png" alt="English" className="h-4 w-6" />
+                <img src={`${path}uk.png`} alt="English" className="h-4 w-6" />
               </button>
             </li>
             <li className="hover:bg-orange-700 rounded px-2 py-1">
               <button onClick={() =>{dispatch(changeLanguageNav('cn'));dispatch(changeLanguageHome('cn'));dispatch(changeLanguage('cn'));dispatch(changeLanguageFindUs('cn'));dispatch(changeLanguage('cn'));toggleMenu()}} className="focus:outline-none">
-                <img src="src/assets/flags/cn.svg" alt="Chinese" className="h-4 w-6" />
+                <img src={`${path}cn.svg`} alt="Chinese" className="h-4 w-6" />
               </button>
             </li>
           </ul>

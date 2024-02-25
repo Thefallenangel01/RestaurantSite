@@ -3,6 +3,7 @@ import OtherPageNavBar from "./OtherPageNavBar";
 import { useSelector } from "react-redux";
 
 function Delivery() {
+    const path="/"
     const output=useSelector((state)=>state.delivery.value)
     return (
         <>
@@ -18,7 +19,7 @@ function Delivery() {
                     <div className="flex flex-col items-center">
                         <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
                             <a href="https://glovoapp.com/it/it/pontedera/la-felicita-ptd/" className="m-4">
-                                <img src="src/assets/glovo-icon.svg" alt="Glovo" className="w-28 h-28" />
+                                <img src={`${path}glovo-icon.svg`} alt="Glovo" className="w-28 h-28" />
                             </a>
                             <p className="text-lg font-semibold text-center mt-2">Glovo</p>
                         </div>
@@ -26,7 +27,7 @@ function Delivery() {
                     <div className="flex flex-col items-center">
                         <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
                             <a href="https://deliveroo.it/it/menu/pontedera/pontedera/la-felicita-pontedera" className="m-4">
-                                <img src="src/assets/deliveroo-icon.svg" alt="Deliveroo" className="w-28 h-28" />
+                                <img src={`${path}deliveroo-icon.svg`} alt="Deliveroo" className="w-28 h-28" />
                             </a>
                             <p className="text-lg font-semibold text-center mt-2">Deliveroo</p>
                         </div>
@@ -34,7 +35,7 @@ function Delivery() {
                     <div className="flex flex-col items-center">
                         <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
                             <a href="https://wa.me/3338695996" className="m-4">
-                                <img src="src/assets/restaurant-staff-icon.png" alt="Restaurant Staff" className="w-28 h-28" />
+                                <img src={`${path}restaurant-staff-icon.png`} alt="Restaurant Staff" className="w-28 h-28" />
                             </a>
                             <p className="text-lg font-semibold text-center mt-2">{output.our}</p>
                         </div>
