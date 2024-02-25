@@ -8,7 +8,7 @@ function FindUs() {
   return (
     <>
       <OtherPageNavBar />
-      <div className="h-screen bg-gradient-to-b from-gray-200 to-gray-400 flex flex-col justify-center items-center text-black mt-12 sm:mt-20">
+      <div className="min-h-screen bg-gradient-to-b from-gray-200 to-gray-400 flex flex-col justify-center items-center text-black mt-12 sm:mt-20">
         <div className="flex flex-col items-center mb-8 mt-20 lg:mt-0">
           <h2 className="text-3xl  md:text-6xl font-bold mb-4 text-center">{output.ourLocation}</h2>
           <p className="text-lg md:text-xl font-bold max-w-3xl text-center mb-4">

@@ -8,14 +8,14 @@ function Delivery() {
     return (
         <>
             <OtherPageNavBar />
-            <div className="h-screen bg-gradient-to-b from-gray-200 to-gray-400 flex flex-col justify-center items-center text-black">
-                <div className="flex flex-col items-center mb-8 mt-20">
+            <div className="min-h-screen bg-gradient-to-b from-gray-200 to-gray-400 flex flex-col justify-center items-center text-black">
+                <div className="flex flex-col items-center mb-8 mt-32 lg:mt-20">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">{output.options}</h1>
                     <p className="text-lg md:text-xl max-w-3xl text-center">
                         {output.deliveryOptions}:
                     </p>
                 </div>
-                <div className=" justify-center items-center mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40">
+                <div className=" justify-center items-center mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-40 gap-20">
                     <div className="flex flex-col items-center">
                         <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
                             <a href="https://glovoapp.com/it/it/pontedera/la-felicita-ptd/" className="m-4">
