@@ -81,10 +81,10 @@ function Menu() {
               <img
                 src={plate.imageLink}
                 alt={plate.name}
-                className="w-full h-64 object-cover rounded-t-lg cursor-pointer"
+                className="w-full h-40 object-cover rounded-t-lg cursor-pointer lg:2-full lg:h-64"
                 onClick={() => openModal(plate.imageLink)}
               />
-              <div className="p-6">
+              <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{plate.name}</h3>
                 <p className="text-gray-600">{plate.description}</p>
                 <p className="text-gray-800 font-semibold mt-4">€{plate.price.toFixed(2)}</p>
