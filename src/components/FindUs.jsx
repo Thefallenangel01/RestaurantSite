@@ -26,7 +26,7 @@ function FindUs() {
         
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
-              <a href="https://www.google.com/maps/dir/43.6669115,10.6309176/La+Felicit%C3%A0,+Viale+Rinaldo+Piaggio,+26,+56025+Pontedera+PI/@43.663948,10.6225235,16z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x132a75edc6d442d5:0x53524fbc27e702d4!2m2!1d10.6329959!2d43.6610429!3e0?hl=it&entry=ttu" className="m-4">
+              <a href="https://www.google.com/maps/dir//La+Felicità,+Viale+Rinaldo+Piaggio,+26,+56025+Pontedera+PI" className="m-4">
                 <img src={`${path}google-maps-icon.svg`} alt="Phone" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">Google Maps</p>
