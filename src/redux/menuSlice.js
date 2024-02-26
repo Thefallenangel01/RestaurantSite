@@ -9,7 +9,8 @@ export const menuSlice= createSlice({
     initialState:{
         value:{
             menu:MenuIt,
-            name:"Il Nostro Menu"
+            all:"Tutto",
+            name:"Il Nostro Menù"
         },
     },
     reducers:{
@@ -18,18 +19,21 @@ export const menuSlice= createSlice({
                 case "en":
                     state.value={
                         menu:MenuEn,
+                        all:"All",
                         name:"Our Menu"
                     }
                     break;
                 case "cn":
                     state.value={
                         menu:MenuCn,
+                        all:"所有",
                         name:"我们的菜单"
                     }
                     break;
                 case "it":
                     state.value={
                         menu:MenuIt,
+                        all:"Tutto",
                         name:"Il Nostro Menù"
                     }
                     break;

@@ -47,12 +47,12 @@ function Menu() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  
   // Filter plates by category
-  const filteredPlates = selectedCategory === 'All' ? plates.menu : plates.menu.filter(plate => plate.category === selectedCategory);
+  const filteredPlates = selectedCategory === plates.all||!(new Set(plates.menu.map(plate => plate.category))).has(selectedCategory) ? plates.menu : plates.menu.filter(plate => plate.category === selectedCategory);
 
   // Extract unique categories
-  const categories = ['All', ...new Set(plates.menu.map(plate => plate.category))];
+  const categories = [plates.all, ...new Set(plates.menu.map(plate => plate.category))];
 
   return (
     <>
@@ -65,7 +65,7 @@ function Menu() {
               <li key={index} className="mr-4 w-fill">
                 <a
                   href="#"
-                  className={`px-6 py-2 inline-block max-w-fit ${selectedCategory === category ? 'bg-yellow-500 text-white' : 'bg-grey text-gray-800 hover:bg-yellow-300'}`}
+                  className={`px-6 py-2 inline-block max-w-fit ${selectedCategory === category ||(!(new Set(plates.menu.map(plate => plate.category))).has(selectedCategory)&&category===plates.all) ? 'bg-yellow-500 text-white' : 'bg-grey text-gray-800 hover:bg-yellow-300'}`}
                   onClick={() => setSelectedCategory(category)}
                 >
                   {category}
