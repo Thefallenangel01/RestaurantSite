@@ -35,7 +35,7 @@ function Delivery() {
                     <div className="flex flex-col items-center">
                         <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
                             <a href="https://wa.me/3338695996" className="m-4">
-                                <img src={`${path}restaurant-staff-icon.png`} alt="Restaurant Staff" className="w-28 h-28" />
+                                <img src={`${path}restaurant-staff-icon.svg`} alt="Restaurant Staff" className="m-4" />
                             </a>
                             <p className="text-lg font-semibold text-center mt-2">{output.our}</p>
                         </div>
