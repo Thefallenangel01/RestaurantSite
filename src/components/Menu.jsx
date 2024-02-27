@@ -65,7 +65,7 @@ function Menu() {
               <li key={index} className="mr-4 w-fill">
                 <a
                   href="#"
-                  className={`px-6 py-2 inline-block max-w-fit ${selectedCategory === category ||(!(new Set(plates.menu.map(plate => plate.category))).has(selectedCategory)&&category===plates.all) ? 'bg-yellow-500 text-white' : 'bg-grey text-gray-800 hover:bg-yellow-300'}`}
+                  className={`px-6 py-2 font-bold inline-block max-w-fit ${selectedCategory === category ||(!(new Set(plates.menu.map(plate => plate.category))).has(selectedCategory)&&category===plates.all) ? 'bg-yellow-500 text-white' : 'bg-grey text-gray-800 hover:bg-yellow-300'}`}
                   onClick={() => setSelectedCategory(category)}
                 >
                   {category}
@@ -75,7 +75,7 @@ function Menu() {
           </ul>
         </nav>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
           {filteredPlates.map((plate) => (
             <div key={plate.id} className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:scale-110">
               <img
@@ -85,9 +85,9 @@ function Menu() {
                 onClick={() => openModal(plate.imageLink)}
               />
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2 h-20">{plate.name}</h3>
+                <h3 className="text-base font-semibold mb-2 h-16 lg:h-20  lg:text-lg ">{plate.name}</h3>
                 <p className="text-gray-600">{plate.description}</p>
-                <p className="text-gray-800 font-semibold mt-4">€{plate.price.toFixed(2)}</p>
+                <p className="text-gray-800 font-base mt-4">€{plate.price.toFixed(2)}</p>
               </div>
             </div>
           ))}
