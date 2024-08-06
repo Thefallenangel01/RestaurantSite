@@ -6,7 +6,7 @@ export const homeSlice= createSlice({
         value:{
             welcome:"Benvenuti a ",
             resName:"La Felicità",
-            description:"Celebre e storico ristorante cinese Pontedera. Siamo orgogliosi di offrire un'esperienza culinaria completa, con opzioni sia per pranzi di lavoro che cene, oltre a servizio d'asporto e consegna a domicilio per chi preferisce gustare i nostri piatti comodamente a casa propria. La nostra cucina offre una vasta e autentica selezione di piatti cinesi e tailandesi, preparati con ingredienti freschi e autentici."
+            description:"Celebre e storico ristorante cinese a Pontedera. Siamo orgogliosi di offrire un'esperienza culinaria completa, con opzioni sia per pranzi di lavoro che cene, oltre a servizio d'asporto e consegna a domicilio per chi preferisce gustare i nostri piatti comodamente a casa propria. La nostra cucina offre una vasta e autentica selezione di piatti cinesi e tailandesi, preparati con ingredienti freschi."
           },
     },
     reducers:{
