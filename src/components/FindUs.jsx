@@ -26,7 +26,7 @@ function FindUs() {
         
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
-              <a href="https://www.google.com/maps/dir//La+Felicità,+Viale+Rinaldo+Piaggio,+26,+56025+Pontedera+PI" className="m-4">
+              <a aria-label="Open La Felicità on Google Maps" href="https://www.google.com/maps/dir//La+Felicità,+Viale+Rinaldo+Piaggio,+26,+56025+Pontedera+PI" className="m-4">
                 <img src={`${path}google-maps-icon.svg`} alt="Phone" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">Google Maps</p>
@@ -34,7 +34,7 @@ function FindUs() {
           </div>
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
-              <a href="mailto:ristorantelafelicita@gmail.com" className="m-4">
+              <a aria-label="Send us an email" href="mailto:ristorantelafelicita@gmail.com" className="m-4">
                 <img src={`${path}email-icon.svg`} alt="Email" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">E-mail</p>
@@ -42,7 +42,7 @@ function FindUs() {
           </div>
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
-              <a href="https://wa.me/3338695996" className="m-4">
+              <a aria-label="Chat with us on WhatsApp" href="https://wa.me/3338695996" className="m-4">
                 <img src={`${path}whatsapp-icon.svg`} alt="WhatsApp" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">WhatsApp</p>
@@ -50,7 +50,7 @@ function FindUs() {
           </div>
           <div className="flex flex-col items-center">
             <div className="relative transition duration-300 ease-in-out transform hover:scale-110">
-              <a href="https://www.facebook.com/ristorantelafelicita/?locale=it_IT" className="m-4">
+              <a aria-label="Visit our Facebook page" href="https://www.facebook.com/ristorantelafelicita/?locale=it_IT" className="m-4">
                 <img src={`${path}facebook-icon.svg`} alt="Facebook" className="w-20 h-20" />
               </a>
               <p className="text-lg font-semibold text-center mt-2">Facebook</p>

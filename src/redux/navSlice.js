@@ -7,7 +7,8 @@ export const navSlice= createSlice({
             home:"Home",
             menu:"Menu",
             delivery:"Consegne",
-            findus:"Come Trovarci"
+            findus:"Come Trovarci",
+            changelanguage:"Lingue disponibili"
           },
     },
     reducers:{
@@ -18,7 +19,8 @@ export const navSlice= createSlice({
                         home:"Home",
                         menu:"Menu",
                         delivery:"Delivery",
-                        findus:"Find Us"
+                        findus:"Find Us",
+                        changelanguage:"Available Languages"
                       }
                     break;
                 case "cn":
@@ -26,7 +28,8 @@ export const navSlice= createSlice({
                         home:"主页",
                         menu:"菜单",
                         delivery:"送包",
-                        findus:"怎么找到我们"
+                        findus:"怎么找到我们",
+                        changelanguage:"可用的语言"
                       }
                     break;
                 case "it":
@@ -34,7 +37,8 @@ export const navSlice= createSlice({
                         home:"Home",
                         menu:"Menu",
                         delivery:"Consegne",
-                        findus:"Come Trovarci"
+                        findus:"Come Trovarci",
+                        changelanguage:"Lingue disponibili"
                       }
                     break;
                 default:

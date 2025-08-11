@@ -34,6 +34,9 @@ function Home() {
             key={index}
             src={imageUrl}
             alt={`Slide ${index}`}
+            loading={index === 0 ? 'eager' : 'lazy'}
+            fetchpriority={index === 0 ? 'high' : 'auto'}
+            decoding="async"
             className={`absolute inset-0 object-cover w-full h-full transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           />
         ))}
