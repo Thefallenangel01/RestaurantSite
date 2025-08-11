@@ -161,7 +161,7 @@ function NavBar() {
 
         {/* Mobile menu */}
         <div 
-          className={`lg:hidden fixed inset-y-0 right-0 w-80 bg-gray-900/95 backdrop-blur-md z-50 transform transition-transform duration-300 ease-in-out ${
+          className={`lg:hidden fixed inset-y-0 right-0 w-64 bg-gray-900/95 backdrop-blur-md z-50 transform transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
           } border-l border-white/10`}
         >
