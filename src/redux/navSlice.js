@@ -27,9 +27,9 @@ export const navSlice= createSlice({
                     state.value={
                         home:"主页",
                         menu:"菜单",
-                        delivery:"送包",
-                        findus:"怎么找到我们",
-                        changelanguage:"可用的语言"
+                        delivery:"外卖服务",
+                        findus:"我们在哪里",
+                        changelanguage:"可选语言"
                       }
                     break;
                 case "it":
