@@ -92,7 +92,7 @@ function Menu() {
     <>
       <OtherPageNavBar />
       <div className="container mx-auto mt-40 bg-gray-100 px-4 py-8 rounded-lg shadow-lg">
-        <h2 className="text-4xl font-semibold mb-8 mt-0 text-center text-gray-800">
+        <h2 className="text-4xl font-semibold mb-8 mt-0 text-center text-gray-800 " style={{ fontFamily: "Dancing Script" }}>
           {plates.name}
         </h2>
         
