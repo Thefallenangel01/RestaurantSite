@@ -6,7 +6,7 @@ import { changeLanguage } from "../redux/menuSlice";
 import { changeLanguageHome } from "../redux/homeSlice";
 import { changeLanguageFindUs } from "../redux/findusSlice";
 import { changeLanguageDelivery } from "../redux/deliverySlice";
-
+import { changeLanguageFooter } from "../redux/footerSlice";
 function OtherPageNavBar() {
   const path = "/flags/";
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +36,7 @@ function OtherPageNavBar() {
     dispatch(changeLanguage(lang));
     dispatch(changeLanguageFindUs(lang));
     dispatch(changeLanguageDelivery(lang));
+    dispatch(changeLanguageFooter(lang));
     if (isOpen) toggleMenu();
   };
 

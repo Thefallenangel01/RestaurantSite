@@ -1,7 +1,7 @@
 import React from "react";
 import OtherPageNavBar from "./OtherPageNavBar";
 import { useSelector } from "react-redux";
-
+import { NormalFooter } from "./Footer";
 function Delivery() {
     const path="/"
     const output=useSelector((state)=>state.delivery.value)
@@ -42,6 +42,7 @@ function Delivery() {
                     </div>
                 </div>
             </div>
+        <NormalFooter/>
         </>
     );
 }

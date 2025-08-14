@@ -2,6 +2,7 @@ import React from 'react';
 import OtherPageNavBar from './OtherPageNavBar';
 import MapsInteractive from './MapsInteractive';
 import { useSelector } from 'react-redux';
+import { NormalFooter } from './Footer';
 function FindUs() {
   const path="/"
   const output =useSelector((state)=>state.findus.value);
@@ -62,6 +63,7 @@ function FindUs() {
         </div>
       </div>
       <MapsInteractive></MapsInteractive>
+      <NormalFooter/>
     </>
   );
 }

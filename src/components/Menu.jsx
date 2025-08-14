@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import OtherPageNavBar from './OtherPageNavBar';
 import { useSelector } from 'react-redux';
-
+import { NormalFooter } from './Footer';
 function Menu() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [showGoToTop, setShowGoToTop] = useState(false);
@@ -300,6 +300,7 @@ function Menu() {
           </button>
         )}
       </div>
+      <NormalFooter/>
     </>
   );
 }

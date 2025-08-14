@@ -4,7 +4,7 @@ import { menuReducer } from "./menuSlice";
 import { navReducer } from "./navSlice";
 import { findusReducer } from "./findusSlice";
 import { deliveryReducer } from "./deliverySlice";
-
+import { footerReducer } from "./footerSlice";
 
 export default configureStore(
     {
@@ -14,6 +14,7 @@ export default configureStore(
             nav:navReducer,
             findus:findusReducer,
             delivery:deliveryReducer,
+            footer:footerReducer,
         },
     }
 )
