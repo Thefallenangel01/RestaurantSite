@@ -5,6 +5,7 @@ import { navReducer } from "./navSlice";
 import { findusReducer } from "./findusSlice";
 import { deliveryReducer } from "./deliverySlice";
 import { footerReducer } from "./footerSlice";
+import { mapsReducer } from "./mapsSlice";
 
 export default configureStore(
     {
@@ -15,6 +16,7 @@ export default configureStore(
             findus:findusReducer,
             delivery:deliveryReducer,
             footer:footerReducer,
+            maps:mapsReducer,
         },
     }
 )

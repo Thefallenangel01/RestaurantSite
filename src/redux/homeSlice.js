@@ -33,7 +33,7 @@ export const homeSlice= createSlice({
                         welcome:"欢迎来到",
                         resName:"悦来餐馆",
                         description:"蓬泰代拉著名且历史悠久的中餐厅。我们很自豪能够为那些喜欢在舒适的家中享用我们菜肴的人们提供完整的用餐体验，包括商务午餐和晚餐以及外卖和送货上门服务。我们的美食提供种类繁多的正宗中式和泰式菜肴，均采用新鲜、地道的食材烹制而成。",
-                        ourdishes:"我们的菜单",
+                        ourdishes:"我们的菜肴",
                         ourmenu:"查看完整菜单",
                         completemenu:"完整菜单",
                         contattaci:"联系我们",

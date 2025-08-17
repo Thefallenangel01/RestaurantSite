@@ -7,6 +7,8 @@ import { changeLanguageHome } from "../redux/homeSlice";
 import { changeLanguageFindUs } from "../redux/findusSlice";
 import { changeLanguageDelivery } from "../redux/deliverySlice";
 import { changeLanguageFooter } from "../redux/footerSlice";
+import { changeLanguageMaps } from "../redux/mapsSlice";
+
 function OtherPageNavBar() {
   const path = "/flags/";
   const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +39,7 @@ function OtherPageNavBar() {
     dispatch(changeLanguageFindUs(lang));
     dispatch(changeLanguageDelivery(lang));
     dispatch(changeLanguageFooter(lang));
+    dispatch(changeLanguageMaps(lang));
     if (isOpen) toggleMenu();
   };
 
@@ -189,7 +192,7 @@ function OtherPageNavBar() {
           <div className="p-5 border-b border-white/10 bg-white/5">
             <div className="flex items-center justify-between">
               <h2 
-                className="text-white text-lg font-semibold tracking-wide" 
+                className="text-red-500 text-lg font-semibold tracking-wide" 
                 style={{ fontFamily: "Dancing Script" }}
               >
                 La Felicità

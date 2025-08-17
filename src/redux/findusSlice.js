@@ -4,10 +4,17 @@ export const findusSlice= createSlice({
     name:"findusOut",
     initialState:{
         value:{
-            ourLocation:"Dove ci troviamo",
-            visitUs:"Vieni a trovarci a",
-            contactUs:" Contattaci con (Seleziona il modo)",
-            weAreHere:"Noi siamo qui:"
+            contactUs:"Dove Siamo",
+            weAreHere:"Noi siamo qui:",
+            getDirections:"Ottieni indicazioni",
+            sendMessage:"Inviaci una Email",
+            chatWithUs:"Chatta con noi",
+            followUs:"Seguiteci per gli aggiornamenti",
+            openingHours:"Orari di Apertura",
+            everyday:"Tutti i giorni",
+            lunch:"Pranzo: 12:00 - 15:00",
+            dinner:"Cena: 19:00 - 23:00",
+            location:"Posizione"
           },
     },
     reducers:{
@@ -15,26 +22,47 @@ export const findusSlice= createSlice({
             switch (action.payload) {
                 case "en":
                     state.value={
-                        ourLocation:"Our Location",
-                        visitUs:"Visit us at",
-                        contactUs:" Contact us (Chose the way)",
-                        weAreHere:"We are here:"
+                        contactUs:"Find Us",
+                        weAreHere:"We are here:",
+                        getDirections:"Get directions",
+                        sendMessage:"Send us an Email",
+                        chatWithUs:"Chat with us",
+                        followUs:"Follow us for updates",
+                        openingHours:"Opening Hours",
+                        everyday:"Everyday",
+                        lunch:"Lunch: 12:00 - 15:00",
+                        dinner:"Dinner: 19:00 - 23:00",
+                        location:"Our Location"
                       }
                     break;
                 case "cn":
                     state.value={
-                        ourLocation:"我们在哪里",
-                        visitUs:"我们在",
-                        contactUs:" 请通过这些联系我们 (选择您想要的方式)",
-                        weAreHere:"我们在这:"
+                        contactUs:"我们在哪里",
+                        weAreHere:"我们在这:",
+                        getDirections:"获取路线",
+                        sendMessage:"给我们发电子邮件",
+                        chatWithUs:"与我们聊天",
+                        followUs:"关注我们以获取更新",
+                        openingHours:"营业时间",
+                        everyday:"每天",
+                        lunch:"午餐: 12:00 - 15:00",
+                        dinner:"晚餐: 19:00 - 23:00",
+                        location:"我们的位置"
                       }
                     break;
                 case "it":
                     state.value={
-                        ourLocation:"Dove ci troviamo",
-                        visitUs:"Vieni a trovarci a",
-                        contactUs:" Contattaci con (Seleziona il modo)",
-                        weAreHere:"Noi siamo qui:"
+                        contactUs:"Dove Siamo",
+                        weAreHere:"Noi siamo qui:",
+                        getDirections:"Ottieni indicazioni",
+                        sendMessage:"Inviaci una Email",
+                        chatWithUs:"Chatta con noi",
+                        followUs:"Seguiteci per gli aggiornamenti",
+                        openingHours:"Orari di Apertura",
+                        everyday:"Tutti i giorni",
+                        lunch:"Pranzo: 12:00 - 15:00",
+                        dinner:"Cena: 19:00 - 23:00",
+                        location:"Posizione"
                       }
                     break;
                 default:
