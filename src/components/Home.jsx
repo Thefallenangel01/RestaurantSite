@@ -121,7 +121,7 @@ function Home() {
     const isImageLoaded = loadedImages.has(imageId);
 
     return (
-      <div className={`group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out transform md:hover:scale-110 hover:shadow-lg ${isMobile ? 'flex-shrink-0 w-64 sm:w-80' : ''}`}>
+      <div className={`group bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg hover:z-10 relative ${isMobile ? 'flex-shrink-0 w-64 sm:w-80' : ''}`}>
         <div className="relative overflow-hidden">
           {/* Loading skeleton */}
           {!isImageLoaded && (
@@ -149,7 +149,7 @@ function Home() {
             alt={dish.name}
             loading="lazy"
             decoding="async"
-            className={`w-full h-40 lg:h-48 object-cover transition-all duration-500 ${
+            className={`w-full h-40 lg:h-48 object-cover transition-all duration-300 ${
               isImageLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             onLoad={() => handleImageLoad(imageId)}
@@ -157,7 +157,7 @@ function Home() {
           />
           
           {isImageLoaded && (
-            <div className="absolute inset-0 bg-black opacity-0 md:hover:opacity-10 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
           )}
           
           {isImageLoaded && (
@@ -316,7 +316,7 @@ function Home() {
 
           {/* Desktop Grid Layout (hidden on mobile) */}
           <div className="hidden lg:block">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12" style={{ perspective: '1000px' }}>
               {featuredDishes.map((dish) => (
                 <DishCard key={dish.id} dish={dish} />
               ))}
@@ -381,7 +381,7 @@ function Home() {
 
             <div 
               ref={dishesScrollRef}
-              className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-hide pb-4 px-2" 
+              className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 px-2" 
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
               onTouchStart={hideScrollHint}
               onScroll={hideScrollHint}
